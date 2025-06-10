@@ -1,0 +1,39 @@
+\documentclass[]{article}
+
+
+\input{MetaData.tex}
+\input{features.tex}
+
+\begin{document}
+
+% Header and Footer
+\setlength{\headheight}{32pt} % Fix for fancyhdr header height
+\pagestyle{fancy}
+% Clear default header/footer
+\fancyhf{}
+% Header
+\fancyhead[L]{\begin{tabular}[t]{@{}l@{}} \footnotesize\color{gray}\minstitute \\ \footnotesize\color{gray}\mlecture\end{tabular}}
+\fancyhead[R]{\begin{tabular}[t]{@{}r@{}}\footnotesize\color{gray}\mtitle{}\ -\ \subtitle \\ \footnotesize\color{gray}\today\end{tabular}}
+% Footer
+\fancyfoot[C]{Seite \thepage/\pageref{LastPage}}
+
+% Title Section
+\begin{center}
+    \Huge{\color{haw}\textbf{\mtitle{} - \subtitle}} \\
+    \vspace{0.5cm}
+    \normalsize- Von - \\
+    \large{\mauthor}
+    \vspace{2.0cm}
+    \hrule
+
+\end{center}
+
+
+% Contents
+\begin{Aufgabe}
+    Beispielaufgabe
+\end{Aufgabe}
+
+
+
+\end{document}
